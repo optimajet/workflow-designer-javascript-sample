@@ -31,6 +31,6 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "@optimajet/workflow-designer": "0.0.20"
+    "@optimajet/workflow-designer": "^5.2.0"
   }
 }
