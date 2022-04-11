@@ -3,14 +3,14 @@ import WorkflowDesigner from '@optimajet/workflow-designer';
 
 var wfdesigner = new WorkflowDesigner({
     name: 'simpledesigner',
-    apiurl: 'http://localhost:5000/Designer/API',
+    apiurl: 'https://workflowengine.io/demo/Designer/API',
     renderTo: 'root',
     graphwidth: window.innerWidth,
     graphheight: window.innerHeight,
 });
 
 const data = {
-    schemecode: "WfeSample",
+    schemecode: "SimpleWF",
     processid: ""
 };
 
