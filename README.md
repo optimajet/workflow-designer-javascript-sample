@@ -132,7 +132,7 @@ In this section:
 - the `WorkflowDesigner` constructor takes an object with the designer settings and creates a new instance of the WorkflowDesigner class. The example specifies all the necessary parameters of the designer, namely: the HTTP address of the WorkflowAPI for interacting with the back-end of the application (`apiurl`), the available width (`graphwidth`) and height (`graphheight`) for displaying the WorkflowDesigner window, and the element ID, inside which the entire WorkflowDesigner interface is rendered (`renderTo`). For a more detailed list of the parameters, see the **Designer** section of the documentation page about the WorkflowEngine.
 
 
-If you want to display the Workflow scheme in the Workflow Designer interface, set the required value to the `schemeсode` variable, and assign the `undefined` value to the `processid`. In case you want to display the Workflow process, set the `undefined` value to the `schemecode`, and the required value to the `processid` variable of the WorkflowEngine process identifier.
+If you want to display the Workflow scheme in the Workflow Designer interface, set the required value to the `schemecode` variable, and assign the `undefined` value to the `processid`. In case you want to display the Workflow process, set the `undefined` value to the `schemecode`, and the required value to the `processid` variable of the WorkflowEngine process identifier.
 
 ```javascript
 if (wfdesigner.exists(data)) {
