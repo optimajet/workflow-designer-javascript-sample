@@ -1,21 +1,26 @@
 import WorkflowDesigner from '@optimajet/workflow-designer';
-//import '@optimajet/workflow-designer/localization/workflowdesigner.localization_ru'
+import el from './localization/el.json';
+import elElementUILocalization from './localization/el.js';
+
+el.elementUILocalization = elElementUILocalization;
 
 var wfdesigner = new WorkflowDesigner({
-    name: 'simpledesigner',
-    apiurl: 'http://localhost:5000/Designer/API',
-    renderTo: 'root',
-    graphwidth: window.innerWidth,
-    graphheight: window.innerHeight,
+  apiurl: 'https://workflowengine.io/demo/Designer/API',
+  name: 'wfe',
+  language: 'en',
+  renderTo: 'root',
+  graphwidth: window.innerWidth,
+  graphheight: window.innerHeight,
+  customLocalization: [el]
 });
 
 const data = {
-    schemecode: "WfeSample",
-    processid: ""
+  schemecode: "SimpleWF",
+  processid: ""
 };
 
 if (wfdesigner.exists(data)) {
-    wfdesigner.load(data);
+  wfdesigner.load(data);
 } else {
-    wfdesigner.create();
+  wfdesigner.create();
 }
