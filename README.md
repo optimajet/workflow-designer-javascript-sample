@@ -90,6 +90,7 @@ const data = {
 var wfdesigner = new WorkflowDesigner({
     apiurl: '<YOUR_API_URL_VALUE>',
     renderTo: 'root',
+    templatefolder: '/templates/',
     graphwidth: window.innerWidth,
     graphheight: window.innerHeight,
 });
