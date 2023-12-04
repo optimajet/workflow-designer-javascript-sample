@@ -1,6 +1,6 @@
 {
   "name": "workflow-designer-javascript-sample",
-  "version": "11.0.1",
+  "version": "12.0.0",
   "description": "Designer for Workflow Engine Javascript Sample",
   "keywords": [
     "designer",
@@ -15,7 +15,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
@@ -28,9 +28,10 @@
     "mini-css-extract-plugin": "^2.3.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.76.0",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
-    "@optimajet/workflow-designer": "^11.0.1"
+    "@optimajet/workflow-designer": "^6.0.2"
   }
 }
