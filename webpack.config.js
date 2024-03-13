@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -18,7 +18,7 @@ module.exports = ({development}) => ({
     mode:'production',
  
     optimization: {
-        minimizer: [new UglifyJsPlugin()],
+        minimizer: [new TerserPlugin()],
     },
     module: {
         rules: [
