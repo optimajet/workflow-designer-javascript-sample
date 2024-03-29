@@ -156,7 +156,7 @@ npm i -D webpack webpack-cli
 Next, add the packages necessary for the correct webpack setup
 
 ```shell
-npm i -D @babel/preset-env @babel/core babel-loader css-loader html-webpack-plugin mini-css-extract-plugin uglifyjs-webpack-plugin
+npm i -D @babel/preset-env @babel/core babel-loader css-loader html-webpack-plugin mini-css-extract-plugin terser-webpack-plugin
 ```
 
 The next step is to create the `webpack.config.js` file in the project root.
@@ -165,7 +165,7 @@ The next step is to create the `webpack.config.js` file in the project root.
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // for generate an HTML5 file
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // to extract CSS into separate files
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // to minify your JavaScript
+const TerserPlugin = require('terser-webpack-plugin'); // to minify your JavaScript
 const webpack = require('webpack');
 
 module.exports = () => ({
@@ -180,7 +180,7 @@ module.exports = () => ({
     mode:'production',
  
     optimization: {
-        minimizer: [new UglifyJsPlugin()],
+        minimizer: [new TerserPlugin()],
     },
     module: {
         rules: [
