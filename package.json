@@ -1,6 +1,6 @@
 {
   "name": "workflow-designer-javascript-sample",
-  "version": "20.0.1",
+  "version": "20.0.2",
   "description": "Designer for Workflow Engine Javascript Sample",
   "keywords": [
     "designer",
@@ -32,6 +32,6 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "@optimajet/workflow-designer": "^20.0.1"
+    "@optimajet/workflow-designer": "^20.0.2"
   }
 }
