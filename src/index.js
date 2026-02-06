@@ -1,3 +1,5 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import WorkflowDesigner from '@optimajet/workflow-designer';
 import el from './localization/el.json';
 import elElementUILocalization from './localization/el.js';
